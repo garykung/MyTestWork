@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include "Product.h"
+
+Product::Product(void)
+{
+	ProducePart();
+	cout<<"return a product"<<endl;
+}
+
+Product::~Product(void)
+{
+}
+
+void Product::ProducePart() 
+{ 
+	cout<<"build part of product.."<<endl;
+}
+ProductPart::ProductPart() 
+{ 
+	//cout<<"build productpart.."<<endl;
+}
+
+ProductPart::~ProductPart()
+{
+}
+
+ProductPart* ProductPart::BuildPart()
+{ 
+	return new ProductPart;
+}
